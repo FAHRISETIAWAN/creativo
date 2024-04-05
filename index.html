@@ -11,18 +11,23 @@
         <link rel="alternate" type="application/rss+xml" title="Criativo &raquo; Sample Page Comments Feed" href="https://kfkit.rometheme.pro/criativo/sample-page/feed/"/>
         
         <style>
-            .responsive-video {
+            .elementor-element-3580d99 {
+                position: relative;
+            }
+            .elementor-element-3580d99 video {
                 width: 100%;
-                height: auto;
-                }
-
-                /* Menyesuaikan ukuran video untuk layar lebar 768px atau lebih kecil (misalnya, tampilan ponsel) */
-                @media (max-width: 768px) {
-                .responsive-video {
-                    background-position: center center;
-                }
-                }
-
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1; /* Mengatur video di lapisan belakang */
+            }
+            .elementor-element-3580d99 .ekit-heading--title {
+                padding-top: 20px;
+                position: relative; /* Mengatur judul di lapisan depan */
+                z-index: 1;
+            }
         </style>
         
         
@@ -582,7 +587,7 @@
         <link rel='stylesheet' id='swiper-css' href='https://kfkit.rometheme.pro/criativo/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all'/>
         <link rel='stylesheet' id='elementor-post-3-css' href='https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/elementor/css/post-3.css?ver=1708530979' media='all'/>
         <link rel='stylesheet' id='powerpack-frontend-css' href='https://kfkit.rometheme.pro/criativo/wp-content/plugins/powerpack-lite-for-elementor/assets/css/min/frontend.min.css?ver=2.7.19' media='all'/>
-        <link rel='stylesheet' id='elementor-post-2-css' href='https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/elementor/css/post-2.css?ver=1708531896' media='all'/>
+        <link rel='stylesheet' id='elementor-post-2-css' href='./wp-content/uploads/sites/10/elementor/css/post-2.css' media='all'/>
         <link rel='stylesheet' id='ekit-widget-styles-css' href='https://kfkit.rometheme.pro/criativo/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.0.7' media='all'/>
         <link rel='stylesheet' id='ekit-responsive-css' href='https://kfkit.rometheme.pro/criativo/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.0.7' media='all'/>
         <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.3' media='all'/>
@@ -771,11 +776,16 @@
                 </div>
             </div>
             <div class="elementor-element elementor-element-3580d99 e-flex e-con-boxed e-con e-parent" data-id="3580d99" data-element_type="container" data-core-v316-plus="true"  >
+         
+                
+                <video autoplay muted loop id="myVideo">
+                    <source src="./image/key.mp4" type="video/mp4">
+                </video>
+
                 <div class="elementor-element elementor-element-50ed4de animated-slow elementor-invisible elementor-widget elementor-widget-elementskit-heading" data-id="50ed4de" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="elementskit-heading.default">
                     <div class="elementor-widget-container">
                         <div class="ekit-wid-con">
                             <div class="ekit-heading elementskit-section-title-wraper text_center   ekit_heading_tablet-   ekit_heading_mobile-text_center">
-                                <h5 class="elementskit-section-subtitle  ">Feature</h5>
                                 <h3 class="ekit-heading--title elementskit-section-title ">
                                      Artera AI 
                                     <span>
@@ -790,10 +800,7 @@
                         </div>
                     </div>
                 </div>
-                <video autoplay muted loop id="myVideo" class="responsive-video" style="position: absolute; left: 0; z-index: -1;">
-                    <source src="./image/key.mp4" type="video/mp4">
-            
-                  </video>
+                
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-686d931 e-con-full e-flex e-con e-child" data-id="686d931" data-element_type="container">
                        
@@ -806,6 +813,8 @@
                         </div> -->
                         
                     </div>
+
+
                     <div class="elementor-element elementor-element-c3b9fd7 e-con-full e-flex e-con e-child" data-id="c3b9fd7" data-element_type="container">
                         <div class="elementor-element elementor-element-063b804 e-con-full e-flex e-con e-child" data-id="063b804" data-element_type="container">
                             <div class="elementor-element elementor-element-c90b341 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="c90b341" data-element_type="widget" data-widget_type="elementskit-icon-box.default">
@@ -830,17 +839,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-element elementor-element-c059f41 e-con-full e-flex e-con e-child" data-id="c059f41" data-element_type="container">
-                            <div class="elementor-element elementor-element-d01791b ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="d01791b" data-element_type="widget" data-widget_type="elementskit-icon-box.default">
+                       
+                        <div class="elementor-element elementor-element-5b4bc29 e-con-full e-flex e-con e-child" data-id="5b4bc29" data-element_type="container">
+                            <div class="elementor-element elementor-element-65b6f3d ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="65b6f3d" data-element_type="widget" data-widget_type="elementskit-icon-box.default">
                                 <div class="elementor-widget-container">
                                     <div class="ekit-wid-con">
                                         <!-- link opening -->
-                                        <a  class="ekit_global_links">
+                                        <a class="ekit_global_links">
                                             <!-- end link opening -->
                                             <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-float   ">
                                                 <div class="elementskit-box-header">
                                                     <div class="elementskit-info-box-icon ">
-                                                        <img decoding="async" width="300" height="300" src="https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/2021/08/5-Web-Design.png" class="attachment- size-" alt="" srcset="https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/2021/08/5-Web-Design.png 300w, https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/2021/08/5-Web-Design-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                        <img loading="lazy" decoding="async" width="300" height="300" src="https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/2021/08/1-Ui-Ux.png" class="attachment- size-" alt="" srcset="https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/2021/08/1-Ui-Ux.png 300w, https://kfkit.rometheme.pro/criativo/wp-content/uploads/sites/10/2021/08/1-Ui-Ux-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"/>
                                                     </div>
                                                 </div>
                                                 <div class="box-body">
@@ -853,6 +863,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="elementor-element elementor-element-5b4bc29 e-con-full e-flex e-con e-child" data-id="5b4bc29" data-element_type="container">
                             <div class="elementor-element elementor-element-65b6f3d ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="65b6f3d" data-element_type="widget" data-widget_type="elementskit-icon-box.default">
                                 <div class="elementor-widget-container">
