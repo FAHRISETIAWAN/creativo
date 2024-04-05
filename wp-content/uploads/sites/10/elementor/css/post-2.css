@@ -562,17 +562,19 @@
 }
 
 .elementor-2 .elementor-element.elementor-element-83f4008 .elementskit-infobox {
-    background-color: var( --e-global-color-16356db );
+    background-color: transparent;
+    background-image: linear-gradient(180deg, var( --e-global-color-a88f8f1 ) 0%, var( --e-global-color-98f6a1a ) 100%);
     padding: 1em 2em 1em 2em;
     border-style: solid;
     border-width: 0px 0px 0px 0px;
     border-color: #f5f5f5;
     border-radius: 0px 0px 0px 0px;
+    height:300px;
 }
 
 .elementor-2 .elementor-element.elementor-element-83f4008 .elementskit-infobox:hover {
     background-color: transparent;
-    background-image: linear-gradient(180deg, var( --e-global-color-a88f8f1 ) 0%, var( --e-global-color-98f6a1a ) 100%);
+    background-image: linear-gradient(180deg, var( --e-global-color-16356db ) 0%, var( --e-global-color-16356db ) 100%);
 }
 
 .elementor-2 .elementor-element.elementor-element-83f4008 .elementskit-infobox .elementskit-info-box-title {
