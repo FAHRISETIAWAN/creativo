@@ -2958,7 +2958,7 @@ body:not(.rtl) .elementor-2 .elementor-element.elementor-element-b6a5ea4 .elemen
 }
 
 .elementor-2 .elementor-element.elementor-element-5ce38ec {
-    --display: flex;
+    /* --display: flex; */
     --flex-direction: column;
     --container-widget-width: 100%;
     --container-widget-height: initial;
@@ -3066,7 +3066,7 @@ body:not(.rtl) .elementor-2 .elementor-element.elementor-element-b6a5ea4 .elemen
 }
 
 .elementor-2 .elementor-element.elementor-element-34142a9 .rkit-blog-body {
-    padding: 20px 0px 0px 0px;
+    /* padding: 20px 0px 0px 0px; */
 }
 
 .elementor-2 .elementor-element.elementor-element-34142a9 .rkit-metadata {
